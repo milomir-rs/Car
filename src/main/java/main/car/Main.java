@@ -11,6 +11,11 @@ public class Main {
         audi.model = "A4";
         audi.color = "black";
         audi.printAttributes();
+        audi.travel(150);
+        audi.printAttributes();
+//        audi.fuelUp(30000);
+//        audi.travel(300);
+        
         
         Car bmw = new Car();
         bmw.brand = "BMW";
@@ -20,13 +25,19 @@ public class Main {
         Car fiat = new Car(2010);
         System.out.println("Godina proizvodnje: " + fiat.getBuildYear());
         
-        Car lada = new Car("Lada", "Niva", "green", 2018, 0, 20, 5);
+        Car lada = new Car("Lada", "Niva", "green", 2018, 0, 50, 10);
         lada.printAttributes();
 //        lada.setFuel(343);
+        //proveriti gorivo, 
+
+        lada.travel(300);
+        lada.printAttributes();
+        lada.travel(200);
+        lada.printAttributes();
         lada.travel(100);
-        
         lada.printAttributes();
         
+
         
     }
 
